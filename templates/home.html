@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body bgcolor="cyan">
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+		<h1 align="center" style="color: blue;">Spam Classification Website</h1>	
+		</div>
+		<h2 align="center"  style="color: red">Spam Detector For Email Messages</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p style="color: blue;">Enter Your Mail  which you want to check if its spam or not</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="6" cols="50"></textarea>
+		<br/>
+
+		<input type="Submit" class="btn-info" value="Predict">
+		
+	</form>
+		
+	</div>
+</body>
+	
+</html>
